@@ -61,7 +61,7 @@ class App extends Component {
             <Route exact path="/Indexpages:page">
               <IndexPages />
             </Route>
-            <Route exact path="/Login:login">
+            <Route exact path="/Login/:login">
               <Login />
             </Route>
             <Redirect from="/" to="/Indexpages1" />
