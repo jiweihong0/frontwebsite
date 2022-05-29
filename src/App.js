@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import SelectBar from "./Components/SelectBar/SelectBar";
 import Breadcrumb from "./Components/Breadcrumb/Breadcrumb";
 import Footer from "./Components/Footer/Footer";
+import Login from "./Components/Login/Login";
 import {
   Router,
   Route,
@@ -60,8 +61,8 @@ class App extends Component {
             <Route exact path="/Indexpages:page">
               <IndexPages />
             </Route>
-            <Route exact path="/login">
-              <IndexPages />
+            <Route exact path="/Login:login">
+              <Login />
             </Route>
             <Redirect from="/" to="/Indexpages1" />
           </Switch>
