@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
+import { Alert } from "react-bootstrap";
+import '../../../index.css'
+=======
 import './PageDetail.css';
 
 
+>>>>>>> 8c687a92b2d2f3f807f8ea5064b9fe9f73b05510
 class PageDetail extends Component {
     constructor(props) {
         super(props);
@@ -19,8 +24,13 @@ class PageDetail extends Component {
                                 <div className="container px-5 py-2 mx-auto lg:pt-10 lg:px-20">
                                     <div className="flex flex-wrap ">
                                         <div className="flex flex-wrap w-1/2">
+<<<<<<< HEAD
+                                            <div className="w-full p-1 out-container relative group">
+                                                <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+=======
                                             <div className="w-full p-1 out_container relative group imgg" >
                                                 <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg opacity-100 duration-300" 
+>>>>>>> 8c687a92b2d2f3f807f8ea5064b9fe9f73b05510
                                                     src={this.props.data[0].imgur[1]}/>
                                                 <div className="text-white opacity-0 duration-300 absolute inset-0 flex justify-center items-center text-3xl  font-semibold z-index-1">{this.props.data[0].title}</div>
                                             </div>
@@ -141,6 +151,26 @@ class PageDetail extends Component {
                         <span className="z-20">Next</span>
                     </button>
                 </div>
+<<<<<<< HEAD
+                    ##################################################################
+                    <div className="m-right">
+                        <div className="tm-bg-gray tm-video-details ">
+                            <font size="10">
+                                {this.props.data[0].title}
+                            </font><br/>
+                            <div className="row">
+                                <span className="col-auto bg-dark text-white mx-2 px-4 rounded">123</span>
+                                <span className="col-auto bg-dark text-white mx-2 px-4 rounded">123</span>
+                                <span className="col-auto bg-dark text-white mx-2 px-4 rounded">123</span>
+                            </div>
+                            <div className="row">
+                                <div className="col col-4">1</div>
+                                <div className="col col-8">2</div>
+                            </div>
+                            <span>123456</span><br/>
+                            <span>000000</span><br/>
+                            <span>456789</span>
+=======
                     {/* ################################################################## */}
                     <div className="m-right" style={{backgroundColor:'lightblue'}}>
                         <div className="tm-bg-gray tm-video-details mx-28">
@@ -187,6 +217,7 @@ class PageDetail extends Component {
                             <div>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.0215687295736!2d120.35072181491356!3d22.727439685103217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e102e67d04e07%3A0x2d73f4c49d93a123!2z5aSn56S-5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1653841878913!5m2!1szh-TW!2stw" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
+>>>>>>> 8c687a92b2d2f3f807f8ea5064b9fe9f73b05510
                             <div className="mb-4 d-flex flex-wrap">
                                 <div className="mr-4 mb-2">
                                     <span className="tm-text-gray-dark">Dimension: </span><span className="tm-text-primary">1920x1080</span>

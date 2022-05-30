@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import RentPage from './Components/RentPage/RentPage';
 import IndexPages from "./Components/Pages/IndexPage/IndexPage";
 import PageDetail from "./Components/Pages/PageDetail/PageDetail";
 import Navbar from "./Components/Navbar/Navbar";
@@ -61,6 +62,7 @@ class App extends Component {
             <Route exact path="/Indexpages:page">
               <IndexPages />
             </Route>
+            <Route exact path="/RentPage" component={RentPage} />
             <Route exact path="/Login/:login">
               <Login />
             </Route>
