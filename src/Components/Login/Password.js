@@ -1,22 +1,37 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 
-export default class IndexPages extends Component {
+export default class Password extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { password: "" };
+    this.changState = this.changState.bind(this);
+    this.submitForm = this.submitForm.bind(this);
+  }
+
+  changState(e) {
+    this.setState({ password: e.target.value });
+    console.log("change");
+  }
+
+  submitForm(e) {
+    e.preventDefault();
+    console.log("password");
   }
 
   render() {
+    const { password } = this.state;
+    const { changState, submitForm } = this;
     return (
-      <form>
+      <form onSubmit={submitForm}>
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
+          <label for="Password">Password</label>
           <input
             type="password"
             class="form-control"
-            id="exampleInputPassword1"
+            id="Password"
             placeholder="Password"
+            value={password}
+            onChange={changState}
           />
         </div>
         <div class="form-group form-check">
@@ -25,7 +40,6 @@ export default class IndexPages extends Component {
             Check me out
           </label>
         </div>
-
         <button type="submit" class="btn btn-primary">
           Submit
         </button>
