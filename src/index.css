@@ -16,3 +16,6 @@ code {
   background-image: url("../public/Imgs/hero.jpg");
 }
 
+.out-container:hover img {
+  opacity: 0.3;
+}

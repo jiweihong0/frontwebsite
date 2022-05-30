@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import RentPage from './Components/RentPage/RentPage';
 import IndexPages from "./Components/Pages/IndexPage/IndexPage";
 import PageDetail from "./Components/Pages/PageDetail/PageDetail";
 import Navbar from "./Components/Navbar/Navbar";
@@ -7,7 +8,6 @@ import SelectBar from "./Components/SelectBar/SelectBar";
 import Breadcrumb from "./Components/Breadcrumb/Breadcrumb";
 import Footer from "./Components/Footer/Footer";
 import { Router, Route, Link, Switch, HashRouter, BrowserRouter, Redirect, withRouter } from 'react-router-dom';
-
 const data = [
   { id: 1, imgur: ["Imgs/img-01-big.jpg", "Imgs/hero.jpg"],title:"大社高級套房" }
 ]
@@ -47,6 +47,7 @@ class App extends Component {
             <Route exact path="/Indexpages:page">
               <IndexPages />
             </Route>
+            <Route exact path="/RentPage" component={RentPage} />
             <Redirect from="/" to="/Indexpages1" />
           </Switch>
           <Footer />

@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-
-
+import React, { Component } from 'react';
+import { Alert } from "react-bootstrap";
+import '../../../index.css'
 class PageDetail extends Component {
     constructor(props) {
         super(props);
@@ -17,7 +17,7 @@ class PageDetail extends Component {
                                 <div className="container px-5 py-2 mx-auto lg:pt-10 lg:px-20">
                                     <div className="flex flex-wrap ">
                                         <div className="flex flex-wrap w-1/2">
-                                            <div className="w-full p-1 hover:py-2 hover:opacity-30 relative group">
+                                            <div className="w-full p-1 out-container relative group">
                                                 <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
                                                     src={this.props.data[0].imgur[1]}/>
                                                 <div className="text-white opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-3xl  font-semibold">{this.props.data[0].title}</div>
@@ -145,6 +145,15 @@ class PageDetail extends Component {
                             <font size="10">
                                 {this.props.data[0].title}
                             </font><br/>
+                            <div className="row">
+                                <span className="col-auto bg-dark text-white mx-2 px-4 rounded">123</span>
+                                <span className="col-auto bg-dark text-white mx-2 px-4 rounded">123</span>
+                                <span className="col-auto bg-dark text-white mx-2 px-4 rounded">123</span>
+                            </div>
+                            <div className="row">
+                                <div className="col col-4">1</div>
+                                <div className="col col-8">2</div>
+                            </div>
                             <span>123456</span><br/>
                             <span>000000</span><br/>
                             <span>456789</span>
