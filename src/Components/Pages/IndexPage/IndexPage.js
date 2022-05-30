@@ -40,7 +40,7 @@ class IndexPages extends Component {
     }
 
     sliceImages = (images, page) => {
-        return images.slice(((page - 1) * 20), page * 20);
+        return images.slice(((page - 1) * 12), page * 12);
     }
 
     render() {
